@@ -3,9 +3,9 @@ import Chance from "chance";
 
 const chance = new Chance();
 
-const name = chance.string({ pool: "elkmp" });
-const age = chance.integer({ min: 2, max: 99 });
-const profession = chance.string({ pool: "abcdefghi" });
+const name = chance.name();
+const age = chance.age();
+const profession = chance.profession();
 
 console.log(name);
 export const server = createServer((request, response) => {
